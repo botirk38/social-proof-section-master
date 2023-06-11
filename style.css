@@ -1,0 +1,311 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+/* :root selector */
+:root {
+
+  /* Colors */
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Typography */
+  --p-font-size: 2rem;
+  --font-family: 'League Spartan', sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  overflow: hidden;
+}
+
+main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height:100%;
+    width:100%;
+}
+
+.intro h1{
+    font-weight: var(--font-weight-bold);
+    color: var(--very-dark-magenta);
+}
+
+.intro p{
+    font-size: var(--p-font-size);
+    color: var(--dark-grayish-magenta);
+}
+
+
+
+
+
+/* Media queries Desktop */
+@media (min-width:1024px) {
+    .top-bg-image-mobile {
+      display: none;
+    }
+  
+    .bottom-bg-image-mobile {
+      display: none;
+    }
+
+    .top-bg-image-desktop{
+        background-image: url(../images/bg-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+        width: 50vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .bottom-bg-image-desktop{
+        background-image: url(../images/bg-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+        width: 50vw;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+    }
+    main{
+        margin-top:10%;
+        margin-left:20%;
+        margin-right:10%;
+    }
+    .intro-review{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .intro{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .intro h1{
+        font-size: 4.5rem;
+        margin-bottom: 2rem;
+        width:40%;
+    }
+
+    .intro p{
+        margin-bottom: 1rem;
+        width:47%;
+
+    }
+
+   .review{
+         display:flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         margin-left:auto;
+         margin-right:30rem;
+   }
+   .review-boxes{
+         display:flex;
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: center;
+         width:100%;
+         padding: 1rem;
+         border: 1px solid var(--light-grayish-magenta);
+         background-color: var(--light-grayish-magenta);
+         margin-top: 1rem;
+         border-radius:10px;
+   }
+
+   .review-boxes:nth-of-type(1){
+        margin-right:20rem;
+   }
+
+   .review-boxes:nth-of-type(2){
+        margin-right:10rem;
+   }
+
+   .stars-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-right:1rem;
+   }
+
+   .stars-container img{
+    margin-right: 1rem;
+   }
+
+   .review-boxes p{
+    font-size: 1.5rem;
+    color: var(--very-dark-magenta);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 1rem;
+    width: 100%;    
+   }
+
+   .testimonials{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-right:50rem;
+    margin-left:0;
+    width:100%;
+   }
+
+    .testimonial-boxes{
+      display:flex;
+      flex-direction:column;
+      justify-content: center;
+      align-items: center;
+      width:20%;
+      padding: 1rem;
+      background-color: var(--very-dark-magenta);
+      margin: 1rem;
+      border-radius: 10px;
+    }
+    .customer-info{
+      display:flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding:1rem;
+      margin-right:10rem;
+    }
+    .customer-info img{
+      margin-right:1rem;
+      margin-left:0;
+      border-radius: 50%;
+      width: 50px;
+    }
+
+    .customer-name{
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
+      padding: 1rem;
+
+    }
+
+    .customer-name h3{
+      font-size: 1.5rem;
+      color: var(--white);
+      font-weight: var(--font-weight-bold);
+      margin-bottom: 1rem;
+      width: 100%;
+      margin-right:1rem;
+    }
+
+    .customer-name p{
+      font-size: 1.5rem;
+      color: var(--soft-pink);
+      font-weight: var(--font-weight-medium);
+      margin-bottom: 1rem;
+      margin-right:1rem;
+      width: 100%;
+    }
+
+
+    .customer-review {
+      font-size: 1rem;
+      color: var(--white);
+      margin-top:-1rem;
+      font-weight: var(--font-weight-medium);
+      margin-bottom: 1rem;
+      width: 100%;
+      margin-left:0.5rem; 
+      margin-right:0.5rem;
+      height: 100%;
+
+    }
+
+
+
+  }
+
+/* Media queries Mobile */
+@media (max-width: 375px) {
+    .top-bg-image-desktop {
+      display: none;
+    }
+  
+    .bottom-bg-image-desktop {
+      display: none;
+    }
+
+    .top-bg-image-mobile{
+        background-image: url(../images/bg-pattern-top-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .bottom-bg-image-mobile{
+        background-image: url(../images/bg-pattern-bottom-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+        width: 100vw;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    review-boxes {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .stars-container {
+      margin-right: 0;
+    }
+  
+    .customer-info {
+      margin-bottom: 0;
+    }
+  
+    .customer-name p {
+      margin-bottom: 0.5rem;
+    }
+  
+    .customer-review {
+      margin-top: 0;
+      margin-bottom:0;
+      font-size:0.0875rem;
+  }
+}
