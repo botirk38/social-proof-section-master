@@ -30,7 +30,7 @@ The challenge was to create a responsive social proof section that displays cust
 
 #### Mobile
 
-![Mobile](project.imgs/mobile.PNG)
+![Mobile](project-imgs/mobile.PNG)
 
 
 ### Links
