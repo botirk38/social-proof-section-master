@@ -26,11 +26,11 @@ The challenge was to create a responsive social proof section that displays cust
 
 #### Desktop
 
-![Desktop](./project-imgs/desktop.png)
+![Desktop](./project-imgs/desktop.PNG)
 
 #### Mobile
 
-![Mobile](./project-imgs/mobile.png)
+![Mobile](./project-imgs/mobile.PNG)
 
 
 ### Links
