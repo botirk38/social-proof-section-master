@@ -35,10 +35,8 @@ The challenge was to create a responsive social proof section that displays cust
 
 ### Links
 
-- Solution: [Add solution URL here](https://your-solution-url.com)
-- Live Demo: [Add live demo URL here](https://your-live-demo-url.com)
-- GitHub: [Add GitHub Repository URL here](https://github.com/your-username/your-repo)
-- GitHub Pages: [Add GitHub Pages URL here](https://your-github-pages-url.com)
+- Solution: [Solution URL](https://github.com/botirk38/social-proof-section-master)
+- Live Demo: [Live Demo](https://botirk38.github.io/social-proof-section-master/)
 
 ## Built With
 
